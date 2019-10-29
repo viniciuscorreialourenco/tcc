@@ -1,0 +1,53 @@
+/* login */
+.titulo{
+     margin-left: auto;
+     margin-right: auto;
+}
+.titulo1{
+     margin-top: 48px;
+     font-family: Roboto;
+     font-style: italic;
+     font-weight: bold;
+     font-size: 40px;
+     line-height: 47px;
+     text-align: center;
+     margin-bottom: 0px;
+}
+.titulo2{
+     font-family: Roboto;
+     font-weight: bold;
+     font-size: 40px;
+     text-align: center;
+     color:#f28141;
+}
+.container{
+     width: 100%;
+     height: 100%;
+     background-color:#4391D8;
+}
+#entrada{
+     width: 100%;
+     
+}
+.usuario{
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 20px;
+}
+.senha{
+     margin-left: auto;
+     margin-right: auto;
+}
+.linhaUsuario{
+     margin-top: 25%;
+}
+.botao{
+     margin-left: auto;
+     margin-right: auto;
+}
+.btn{
+     margin-top: 15px;
+     background-color: #f28141;
+     color: white;
+}
+/* inicio */
