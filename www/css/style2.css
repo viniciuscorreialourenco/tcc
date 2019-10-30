@@ -1,0 +1,41 @@
+/* mesas */
+.container{
+     background-color:#55ACEE;
+     height: 100%;
+}
+tituloMesas{
+     color:white;
+}
+.box{
+     background-color: white;
+     height: 100px;
+     border-radius: 15px;
+     margin: 15px;
+    
+}
+.box1{
+     text-align: center;
+}
+#entra{
+     margin-top: 20%;
+     border-radius: 5px;
+     background-color: #66d9ff;
+     color: white;
+}
+label{
+     margin-top: 5px;
+}
+.fas{
+     margin-top: 20px;
+}
+#navbar{
+     background-color: #0054ac;
+     text-align: center;
+     position: fixed;
+     width: 100%;
+     bottom: 0px;
+}
+img{
+     color: white;
+     padding: 15px;
+}
