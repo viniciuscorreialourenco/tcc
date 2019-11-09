@@ -42,5 +42,11 @@ img{
      color: white;
      padding: 15px;
 }
-
+a{
+     color: white;
+}
+a:hover{
+     color: white;
+     text-decoration: none;
+}
 

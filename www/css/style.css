@@ -50,4 +50,10 @@
      background-color: #ff8c66;
      color: white;
 }
-
+a{
+     color: white;
+}
+a:hover{
+     color: white;
+     text-decoration: none;
+}

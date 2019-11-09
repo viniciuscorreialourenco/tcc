@@ -1,4 +1,3 @@
-/* mesas */
 .container{
      background-color:#55ACEE;
      height: 100%;
@@ -9,10 +8,12 @@
 }
 .box{
      background-color: white;
-     height: 100px;
+     height: 120px;
      border-radius: 15px;
-     margin: 15px;
-    
+     margin-left: 10%;
+     margin-right: 10%;
+     width:80%; 
+     margin-top: 5%;
 }
 .box1{
      text-align: center;
@@ -39,6 +40,13 @@ label{
 img{
      color: white;
      padding: 15px;
+}
+label{
+     font-size: 20px;
+     margin-top: 20px;
+}
+#mesa{
+     float: right;
 }
 a{
      color: white;

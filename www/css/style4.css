@@ -1,7 +1,10 @@
 /* mesas */
+body{
+     overflow: auto;
+}
 .container{
      background-color:#55ACEE;
-     height: 100%;
+    
 }
 #tituloMesas{
      color:white;
@@ -9,10 +12,10 @@
 }
 .box{
      background-color: white;
-     height: 100px;
+     width: 41.5%;
+     height: 300px;
      border-radius: 15px;
-     margin: 15px;
-    
+     margin: 15px;    
 }
 .box1{
      text-align: center;
@@ -35,6 +38,7 @@ label{
      position: fixed;
      width: 100%;
      bottom: 0px;
+     
 }
 img{
      color: white;
@@ -46,4 +50,30 @@ a{
 a:hover{
      color: white;
      text-decoration: none;
+}
+#quantidade{
+     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+}
+#btnAdicionar{
+     margin-top:6%;
+     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: 5px;
+     height: 30px;
+     background-color: rgba(6, 70, 165, 0.836);
+     color: white;
+}
+#fotosProduto{
+     width: 90%;
+     height: 170px;
+     margin-top: 10px;
+     border-radius: 10px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 0px;
+     border: 1px solid black;
 }

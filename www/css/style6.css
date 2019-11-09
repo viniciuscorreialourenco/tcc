@@ -1,4 +1,3 @@
-/* mesas */
 .container{
      background-color:#55ACEE;
      height: 100%;
@@ -6,13 +5,16 @@
 #tituloMesas{
      color:white;
      font-size: 30px;
+     padding-left:30px; 
 }
 .box{
      background-color: white;
-     height: 100px;
+     height: 120px;
      border-radius: 15px;
-     margin: 15px;
-    
+     margin-left: 10%;
+     margin-right: 10%;
+     width:80%; 
+     margin-top: 5%;
 }
 .box1{
      text-align: center;
@@ -24,7 +26,7 @@
      color: white;
 }
 label{
-     margin-top: 5px;
+     margin-top: 15px;
 }
 .fas{
      margin-top: 20px;
@@ -40,10 +42,24 @@ img{
      color: white;
      padding: 15px;
 }
+label{
+     font-size: 20px;
+     margin-top: 30%;
+}
+#mesa{
+     float: right;
+}
 a{
      color: white;
 }
 a:hover{
      color: white;
      text-decoration: none;
+}
+button{
+     margin-top: 50%;
+}
+#adicionar{
+     width: 70px;
+     float: right;
 }

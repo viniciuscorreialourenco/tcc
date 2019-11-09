@@ -1,0 +1,29 @@
+.container{
+     background-color:#55ACEE;
+     height: 100%;
+}
+#tituloMesas{
+     color:white;
+     font-size: 30px;
+     padding-left:30px; 
+}
+button{
+     margin-top: 2%;
+}
+label{
+     margin-top: 25%;
+}
+.fas{
+     margin-top: 20px;
+}
+#navbar{
+     background-color: #0054ac;
+     text-align: center;
+     position: fixed;
+     width: 100%;
+     bottom: 0px;
+}
+img{
+     color: white;
+     padding: 15px;
+}
