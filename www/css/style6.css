@@ -1,3 +1,6 @@
+body{
+     overflow: auto;
+}
 .container{
      background-color:#55ACEE;
      height: 100%;
@@ -41,6 +44,8 @@ label{
 img{
      color: white;
      padding: 15px;
+     padding-bottom: 0px;
+     padding-top: 5px;
 }
 label{
      font-size: 20px;
@@ -62,4 +67,28 @@ button{
 #adicionar{
      width: 70px;
      float: right;
+}
+#nomeCliente{
+     margin-top: 10px;
+}
+#salvar{
+     margin-top: 10px;
+}
+#cancelar{
+     margin-top: 10px;
+}
+#perfilLabel{
+     margin-top: 0px;
+     font-size: 15px;
+     color: white;
+}
+#inicioLabel{
+     margin-top: 0px;
+     font-size: 15px;
+     color: white;
+}
+#pedidoLabel{
+     margin-top: 0px;
+     font-size: 15px;
+     color: white;
 }

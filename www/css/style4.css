@@ -43,6 +43,8 @@ label{
 img{
      color: white;
      padding: 15px;
+     padding-top: 5px;
+     padding-bottom: 0px;
 }
 a{
      color: white;
@@ -76,4 +78,19 @@ a:hover{
      margin-right: auto;
      padding: 0px;
      border: 1px solid black;
+}
+#perfilLabel{
+     margin-top: 0px;
+     font-size: 15px;
+     color: white;
+}
+#inicioLabel{
+     margin-top: 0px;
+     font-size: 15px;
+     color: white;
+}
+#pedidoLabel{
+     margin-top: 0px;
+     font-size: 15px;
+     color: white;
 }

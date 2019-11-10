@@ -23,7 +23,7 @@
                     <h1 id="tituloMesas">Comandas</h1>
                </div>           
                <div class="col-xs-4">
-                    <a href="adicionarComanda.html"><img src="imagens/add.png" alt="" id="adicionar"></a>
+                    <a type="button" data-toggle="modal" data-target="#adicionar1"><img src="imagens/add.png" alt="" id="adicionar"></a>
                </div>     
           </div>
           <div class="row">
@@ -59,14 +59,44 @@
           <div class="row" id="navbar">
                <div class="col-xs-4">
                     <a href="menu.html"><img src="imagens/home.png" alt=""></a>
+                    <div class="row">
+                         <label for="" id="inicioLabel">Inicio</label>
+                    </div>
                </div>
                <div class="col-xs-4">
-                    <a href="pedidosPendentes.html"><img src="imagens/menu.png" alt="">
+                    <a href="pedidosPendentes.html"><img src="imagens/menu.png" alt=""></a>
+                    <div class="row">
+                         <label for="" id="pedidoLabel">Pedidos</label>
+                    </div>
                </div>
                <div class="col-xs-4">
-                    <a href="perfil.html"><img src="imagens/usuario.png" alt="">
+                    <a href="perfil.html"><img src="imagens/usuario.png" alt=""></a>
+                    <div class="row">
+                         <label for="" id="perfilLabel">Perfil</label>
+                    </div>
                </div>
           </div>
+          <div id="adicionar1" class="modal fade" role="dialog">
+               <div class="modal-dialog">
+
+               <!-- Modal content-->
+                    <div class="modal-content">
+                         <div class="modal-header">
+                              <h4 class="modal-title" style="color:'black'">Adicionar comanda</h4>
+                         </div>
+                         <div class="modal-body">
+                              <label for="" id="nomeCliente">Nome do Cliente</label>
+                              <input type="text" class="form-control">
+                         </div>
+                         <div class="modal-footer">
+                              <button type="button" class=" btn-success" id="salvar">Salvar</button>
+                              <button type="button" class=" btn-danger" id="cancelar">Cancelar</button>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <script type="text/javascript" src="components/jquery-3.3.1.min.js"></script>
+          <script type="text/javascript" src="components/bootstrap.min.js"></script>
      </div>
 </body>
 </html>

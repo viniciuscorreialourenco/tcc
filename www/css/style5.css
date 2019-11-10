@@ -25,3 +25,18 @@ body{
      color:white;
      font-size: 30px;
 }
+#perfilLabel{
+     margin-top: 0px;
+     font-size: 15px;
+     color: white;
+}
+#inicioLabel{
+     margin-top: 0px;
+     font-size: 15px;
+     color: white;
+}
+#pedidoLabel{
+     margin-top: 0px;
+     font-size: 15px;
+     color: white;
+}
