@@ -27,10 +27,19 @@ body{
      background-repeat: no-repeat;
      background-size: cover;
 }
-#entrada{
+/*#entrada{
      width: 100%;
      
+}*/
+
+#usuario{
+    width: 100%;
 }
+
+#senha{
+    width: 100%;
+}
+
 .usuario{
      margin-left: auto;
      margin-right: auto;
