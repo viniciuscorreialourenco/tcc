@@ -4,28 +4,29 @@
 $(document).ready(function(){
     $(document).on("click", "#entrar", function(){
         var form_data = new FormData();
-        form_data.append("senha",$("#senha").val());
-        form_data.append("usuario",$("#usuario").val());
+        var usuario = $("#usuario").val();
+        var senha = $("#senha").val();
+        form_data.append("usuarioPHP", usuario);
+        form_data.append("senhaPHP", senha);
 
-        if(usuario == "" || senha == ""){
-            navigator.notification.alert("Por favor preencha os campos de usuario e senha");
-        } else {
-            $.ajax({
-                method: "post",
-                url: "https://sistemaquiosque.000webhostapp.com/comandaTCC/src/login.php",
-                data: form_data,
-                dataType: 'json',
-                processData: false,
-                contentType: false,
-                success: function(data){
-                    navigator.notification.alert(data);
+        $.ajax({
+            method: "post",
+            url: "https://sistemaquiosque.000webhostapp.com/comandaTCC/src/login.php",
+            data: form_data,
+            processData: false,
+            contentType: false,
+            success: function(data){
+                let objJsonUsuario = JSON.parse(data);
+                console.log(objJsonUsuario);
+                if(objJsonUsuario.usuario == usuario && objJsonUsuario.senha == senha){
                     window.location.href = "menu.html";
-                }, 
-                error: function(data){
-                    navigator.notification.alert(data);
+                } else {
+                    navigator.notification.alert("usuario e/ou senha incorretos");
                 }
-            });
-        }
+            }, 
+            error: function (request, status, error) {
+                navigator.notification.alert(request.responseText);
+            }
+        });
     });
 });
-
