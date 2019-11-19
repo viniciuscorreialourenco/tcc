@@ -67,6 +67,7 @@ button{
 #adicionar{
      width: 70px;
      float: right;
+     margin-top: 10%;
 }
 #nomeCliente{
      margin-top: 10px;
@@ -91,4 +92,7 @@ button{
      margin-top: 0px;
      font-size: 15px;
      color: white;
+}
+#salvarComanda{
+     margin-top: 0px;
 }
