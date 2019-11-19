@@ -20,6 +20,8 @@ $(document).ready(function(){
                 console.log(objJsonUsuario);
                 if(objJsonUsuario.usuario == usuario && objJsonUsuario.senha == senha){
                     window.location.href = "menu.html";
+                } else if(usuario == "" && senha == "") {
+                    navigator.notification.alert("Por favor preencha os campos usuario e senha");
                 } else {
                     navigator.notification.alert("usuario e/ou senha incorretos");
                 }

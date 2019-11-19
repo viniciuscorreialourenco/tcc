@@ -14,81 +14,66 @@
   <link rel="stylesheet" href="css/style6.css">
 </head>
 <body>
-     <div class="container">
-          <div class="row titulo">
-               <div class="col-xs-2">
-                    <a href="mesas.html"><i class="fas fa-arrow-left fa-2x" id="iconeVoltar"></i></a>
-               </div>
-               <div class="col-xs-6">
-                    <h1 id="tituloMesas">Comandas</h1>
-               </div>           
-               <div class="col-xs-4">
-                    <a type="button" data-toggle="modal" data-target="#adicionar1"><img src="imagens/add.png" alt="" id="adicionar"></a>
-               </div>     
-          </div>
-          <div class="row">
-               <div class="col-xs-6 box">
-                    <div class="col-xs-7">
-                         <label for="">Luiz</label><br>                           
+    <div class="container">
+        <div class="row titulo">
+            <div class="col-xs-2">
+                <a href="mesas.html"><i class="fas fa-arrow-left fa-2x" id="iconeVoltar"></i></a>
+            </div>
+
+            <div class="col-xs-6">
+                <h1 id="tituloMesas">Comandas</h1>
+            </div>      
+
+            <div class="col-xs-4">
+                <a type="button" data-toggle="modal" data-target="#adicionarComanda"><img src="imagens/add.png" alt="" id="adicionar"></a>
+            </div>     
+        </div>
+
+        <div id="comandas" class="row">
+                   
+        </div>
+
+        <div class="row" id="navbar">
+            <div class="col-xs-4">
+                <a href="menu.html">
+                    <div class="row">
+                        <img src="imagens/home.png" alt="">
                     </div>
-                    <div class="col-xs-5">
-                        <a href="produtos.html"><button class="btn-success btn-block">ABRIR</button></a>
-                    </div>   
-               </div>               
-          </div>
-          <div class="row">
-               <div class="col-xs-12 box">
-                    <div class="col-xs-7">
-                         <label for="">Vinicius</label><br>                           
+
+                    <div class="row">
+                        <label for="" id="inicioLabel">Inicio</label>
                     </div>
-                    <div class="col-xs-5">
-                        <button class="btn-danger btn-block">FECHAR</button>
-                    </div>             
-               </div>
-          </div>
-          <div class="row">
-               <div class="col-xs-12 box">
-                    <div class="col-xs-7">
-                         <label for="">Erick</label><br>                           
+                </a>
+
+            </div>
+
+            <div class="col-xs-4">
+                <a href="pedidosPendentes.html">
+                    <div class="row">
+                        <img src="imagens/menu.png" alt="">
                     </div>
-                    <div class="col-xs-5">
-                        <a href="produtos.html"><button class="btn-success btn-block">ABRIR</button></a>
-                    </div>                
-               </div>
-          </div>
-          <div class="row" id="navbar">
-               <div class="col-xs-4">
-                    <a href="menu.html">
-                         <div class="row">
-                              <img src="imagens/home.png" alt="">
-                         </div>
-                         <div class="row">
-                              <label for="" id="inicioLabel">Inicio</label>
-                         </div>
-                    </a>
-               </div>
-               <div class="col-xs-4">
-                    <a href="pedidosPendentes.html">
-                         <div class="row">
-                              <img src="imagens/menu.png" alt="">
-                         </div>
-                         <div class="row">
-                              <label for="" id="pedidoLabel">Pedidos</label>
-                         </div>
-                    </a>
-               </div>
-               <div class="col-xs-4">
-                     <a href="perfil.html">
-                         <div class="row">
-                              <img src="imagens/usuario.png" alt="">
-                         </div>
-                         <div class="row">
-                              <label for="" id="perfilLabel">Perfil</label>
-                         </div>
-                    </a>
-               </div>
-          </div>
-          <div id="adicionar1" class="modal fade" role="dialog">
+
+                    <div class="row">
+                        <label for="" id="pedidoLabel">Pedidos</label>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xs-4">
+                <a href="perfil.html">
+                    <div class="row">
+                        <img src="imagens/usuario.png" alt="">
+                    </div>
+
+                    <div class="row">
+                        <label for="" id="perfilLabel">Perfil</label>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Modal para adicionar uma comanda -->
+          <div id="adicionarComanda" class="modal fade" role="dialog">
                <div class="modal-dialog">
 
                <!-- Modal content-->
@@ -101,14 +86,15 @@
                               <input type="text" class="form-control">
                          </div>
                          <div class="modal-footer">
-                              <button type="button" class=" btn-success" id="salvar">Salvar</button>
+                              <button type="button" class=" btn-success" id="salvarComanda">Salvar</button>
                               <button type="button" class=" btn-danger" id="cancelar">Cancelar</button>
                          </div>
                     </div>
                </div>
           </div>
-          <script type="text/javascript" src="components/jquery-3.3.1.min.js"></script>
-          <script type="text/javascript" src="components/bootstrap.min.js"></script>
-     </div>
+    </div>
+    <script type="text/javascript" src="components/bootstrap.min.js"></script>
+    <script type="text/javascript" src="components/jquery-3.3.1.min.js"></script>
+    <script src="components/comanda.js"></script>
 </body>
 </html>
