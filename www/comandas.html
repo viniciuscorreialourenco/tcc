@@ -2,16 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-  <script src="components/loader.js"></script>
-  <script src="lib/onsenui/js/onsenui.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
 
-  <link rel="stylesheet" href="components/loader.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style6.css">
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style6.css">
 </head>
 <body>
     <div class="container">
@@ -72,26 +70,28 @@
         </div>
 
         <!-- Modal para adicionar uma comanda -->
-          <div id="adicionarComanda" class="modal fade" role="dialog">
-               <div class="modal-dialog">
+        <div id="adicionarComanda" class="modal fade" role="dialog">
+            <div class="modal-dialog">
 
-               <!-- Modal content-->
-                    <div class="modal-content">
-                         <div class="modal-header">
-                              <h4 class="modal-title" style="color:'black'">Adicionar comanda</h4>
-                         </div>
-                         <div class="modal-body">
-                              <label for="" id="nomeCliente">Nome do Cliente</label>
-                              <input type="text" class="form-control">
-                         </div>
-                         <div class="modal-footer">
-                              <button type="button" class=" btn-success" id="salvarComanda">Salvar</button>
-                              <button type="button" class=" btn-danger" id="cancelar">Cancelar</button>
-                         </div>
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" style="color:'black'">Adicionar comanda</h4>
                     </div>
-               </div>
-          </div>
+                    <div class="modal-body">
+                        <label for="" id="lbNomeCliente">Nome do Cliente</label>
+                        <input type="text" class="form-control" id="nomeClientes" placeholder="digite o nome do cliente">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class=" btn-success" id="salvarComanda" data-dismiss="modal">Salvar</button>
+                        <button type="button" class=" btn-danger" id="cancelar" data-dismiss="modal">Cancelar</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="components/loader.js"></script>
+    <script src="lib/onsenui/js/onsenui.min.js"></script>
     <script type="text/javascript" src="components/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="components/bootstrap.min.js"></script>
     <script src="components/comanda.js"></script>

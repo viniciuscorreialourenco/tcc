@@ -1,5 +1,6 @@
 body{
      overflow: auto;
+     background-color:#55ACEE;
 }
 .container{
      background-color:#55ACEE;
@@ -69,7 +70,7 @@ button{
      float: right;
      margin-top: 10%;
 }
-#nomeCliente{
+#lbNomeCliente{
      margin-top: 10px;
 }
 #salvar{

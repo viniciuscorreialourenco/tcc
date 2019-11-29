@@ -20,10 +20,11 @@ $(document).ready(function(){
                 console.log(objJsonUsuario);
                 if(objJsonUsuario.usuario == usuario && objJsonUsuario.senha == senha){
                     window.location.href = "menu.html";
+                    localStorage.setItem("codigoUser", objJsonUsuario.codigoUsuario);
                 } else if(usuario == "" && senha == "") {
-                    navigator.notification.alert("Por favor preencha os campos usuario e senha");
-                } else {
-                    navigator.notification.alert("usuario e/ou senha incorretos");
+                    alert("Por favor preencha os campos usuario e senha");
+                } else if(objJsonUsuario.usuario != usuario && objJsonUsuario.senha != senha){
+                    alert("usuario e/ou senha incorretos");
                 }
             }, 
             error: function (request, status, error) {
@@ -31,4 +32,8 @@ $(document).ready(function(){
             }
         });
     });
+
+    function retornaUmPerfil(){
+        
+    }
 });
