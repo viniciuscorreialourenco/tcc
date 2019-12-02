@@ -25,7 +25,7 @@ function retornaProdutos(){
                             <input type="number" class="form-control" id="quantidade" placeholder="quantidade">
                         </div>
                         <div class="row">
-                            <button class="btn-block" id="btnAdicionar" onclick="movePedidos()">ADICIONAR</button>
+                            <button class="btn-block" id="btnAdicionar" onclick="insertRequest(${objJsonProdutos[contadorProdutos].cd_produto})">ADICIONAR</button>
                         </div>
                     </div>`;
                     contadorProdutos++
@@ -39,10 +39,27 @@ function retornaProdutos(){
     });
 }
 
-$(document).on("click", "#btnAdicionar", function(){
-    
-});
+function insertRequest(code){
 
-function movePedidos(){
-    window.location.href="pedidos.html";
+    var parametros = {
+        "objAmount": $("#quantidade").val(),
+        "objProductCode": $(code).val(),
+        "codeUser": "objCodeUser = "+localStorage.getItem("codigoUser"),
+        "codeCommand": "objCodeCommand = "+localStorage.getItem("codigoComanda"),  
+    }
+
+    $.ajax({
+        method: "post",
+        url: "https://sistemaquiosque.000webhostapp.com/comandaTCC/src/insertRequests.php",
+        data: parametros,
+        processData: false,
+        contentType: false,
+        success: function(data){
+            navigator.notification.alert("produto adicionado com sucesso");
+            window.location.href = "pedidos.html";
+        },
+        error: function(data){
+            navigator.notification.alert("erro ao adicionar o produto");
+        }
+    });
 }

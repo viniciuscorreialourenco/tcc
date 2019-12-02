@@ -50,9 +50,9 @@ function retornaComandas(){
                         </div>   
                     </div>`;
                     contadorComanda++
-            } 
-
+            }
             document.querySelector("#comandas").innerHTML += htmlListarComandas;
+            localStorage.setItem("codigoComanda", objJsonUsuario.codigoComanda);
         }, 
         error: function (request, status, error) {
             navigator.notification.alert(request.responseText);
