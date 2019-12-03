@@ -13,8 +13,8 @@ body{
 }
 .box{
      background-color: white;
-     width: 41.5%;
-     height: 120px;
+     width: 90%;
+     height: 180px;
      border-radius: 15px;
      margin: 15px;    
 }
@@ -56,6 +56,12 @@ a:hover{
 }
 #quantidade{
      width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+}
+#produtoEscolha{
+     width: 80%;
+     margin-bottom: 5px;
      margin-left: auto;
      margin-right: auto;
 }
