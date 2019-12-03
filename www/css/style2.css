@@ -1,6 +1,7 @@
 /* mesas */
 body{
      overflow: auto;
+      background-color:#55ACEE;
 }
 .container{
      background-color:#55ACEE;
@@ -14,7 +15,7 @@ body{
      background-color: white;
      height: 100px;
      border-radius: 15px;
-     margin: 15px;
+     margin: 13px;
     
 }
 .box1{
@@ -38,6 +39,7 @@ label{
      position: fixed;
      width: 100%;
      bottom: 0px;
+     
 }
 img{
      color: white;

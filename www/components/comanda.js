@@ -1,18 +1,24 @@
 // This is a JavaScript file
-$(document).on("click", "salvarComanda", function(){
-    let nomeCliente = document.querySelector("#nomeCliente");
+
+$(document).on("click", "#salvarComanda", function(){
+    var nomeCliente = $("#nomeClientes").val();
+    var form_data = new FormData();
+        form_data.append("objNomeCliente", nomeCliente);
 
     $.ajax({
+        method: 'post',
         url:'https://sistemaquiosque.000webhostapp.com/comandaTCC/src/comanda.php',
-        type:'POST',
-        data: {objNomeCliente: nomeCliente.value},
-        success: (data) => {
-            if(data == 1){
-                navigator.notification.alert("Comanda cadastrada com sucesso");      
-                retornaComandas();
-            } else {
-                alert('Falha ao Cadastrar a nova comanda');
-            }            
+        data: form_data,
+        contentType:false,
+        cache:false,
+        processData:false,
+        success: function(data){
+            navigator.notification.alert("Comanda cadastrada com sucesso");
+            $("#nomeClientes").val("");      
+            retornaComandas();
+        },           
+        error: function(data){
+            navigator.notification.alert("falha ao cadastrar a comanda");
         }
     });
 });
@@ -44,9 +50,9 @@ function retornaComandas(){
                         </div>   
                     </div>`;
                     contadorComanda++
-            } 
-
+            }
             document.querySelector("#comandas").innerHTML += htmlListarComandas;
+            localStorage.setItem("codigoComanda", objJsonUsuario.codigoComanda);
         }, 
         error: function (request, status, error) {
             navigator.notification.alert(request.responseText);
