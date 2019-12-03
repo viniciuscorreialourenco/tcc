@@ -46,13 +46,12 @@ function retornaComandas(){
                         </div>
 
                         <div class="col-xs-5">
-                            <a href="produtos.html"><button class="btn-success btn-block">ABRIR</button></a>
+                            <a href="produtos.html"><button class="btn-success btn-block" onclick="localStorage.setItem('codigoComanda', ${objJsonCliente[contadorComanda].cd_pedidos});">ABRIR</button></a>
                         </div>   
                     </div>`;
                     contadorComanda++
             }
             document.querySelector("#comandas").innerHTML += htmlListarComandas;
-            localStorage.setItem("codigoComanda", objJsonUsuario.codigoComanda);
         }, 
         error: function (request, status, error) {
             navigator.notification.alert(request.responseText);
