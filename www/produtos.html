@@ -27,26 +27,25 @@
         </div>
 
         <div class="row" id="listaProduto">
-             <div class="col-xs-5 box">
-                        <div class="row box1">
-                            <label for="">selecione seu produto:</label>
-                        </div>
-                        <div class="row">
-                              <select name="select" class="form-control" id="produtoEscolha">
-                                   <option value="" selected disabled>produtos</option>
-                              </select>
-                        </div>
-                        <div class="row">
-                            <input type="number" class="form-control" id="quantidade" placeholder="quantidade">
-                        </div>
-                        <div class="row">
-                            <button class="btn-block" id="btnAdicionar" onclick="insertRequest(${objJsonProdutos[contadorProdutos].cd_produto}); ">ADICIONAR</button>
-                        </div>
-                    </div>   
+            <div class="col-xs-5 box">
+                <div class="row box1">
+                    <label for="">selecione seu produto:</label>
+                </div>
+                <div class="row">
+                    <select name="select" class="form-control" id="produtoEscolha">
+                        <option value="" selected disabled>produtos</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <input type="number" class="form-control" id="quantidade" placeholder="quantidade">
+                </div>
+                <div class="row">
+                    <button class="btn-block" id="btnAdicionar">ADICIONAR</button>
+                </div>
+            </div>   
         </div>
-
+        <div id="pedido"></div>
         <br><br><br><br>
-
         <div class="row" id="navbar">
             <div class="col-xs-4">
                 <a href="menu.html">
