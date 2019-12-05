@@ -1,18 +1,22 @@
+$(document).ready(function(){
+    returnsPendingOrders();
+});
 
-let urlId = window.location.search.split("=");
-let codigo = urlId[1];
 
-var parametros = {
-    "codigo":codigo 
-}
-console.log(parametros.codigo);
+function returnsRequests(){
+    let urlId = window.location.search.split("=");
+    let codigo = urlId[1];
 
-$.ajax({
+    var parametros = {
+        "codigo":codigo 
+    }
+
+    $.ajax({
         method: "post",
         url: "https://sistemaquiosque.000webhostapp.com/comandaTCC/src/listRequests.php",
         data: parametros.codigo,
         success: function(data){
-            console.log(data);
+
             let obj = JSON.parse(data);
             document.querySelector("#pedido").innerHTML += `
                 <div class="row">
@@ -38,3 +42,4 @@ $.ajax({
             navigator.notification.alert("erro ao adicionar o produto");
         }
     });
+}

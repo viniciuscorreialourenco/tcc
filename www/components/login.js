@@ -1,5 +1,3 @@
-// This is a JavaScript file
-
 //entrar no sistema em login
 $(document).ready(function(){
     $(document).on("click", "#entrar", function(){
@@ -22,6 +20,7 @@ $(document).ready(function(){
                     window.location.href = "menu.html";
                     localStorage.setItem("codigoUser", objJsonUsuario.codigoUsuario);
                 } else if(usuario == "" && senha == "") {
+                    alert(data);
                     alert("Por favor preencha os campos usuario e senha");
                 } else if(objJsonUsuario.usuario != usuario && objJsonUsuario.senha != senha){
                     alert("usuario e/ou senha incorretos");
@@ -32,8 +31,4 @@ $(document).ready(function(){
             }
         });
     });
-
-    function retornaUmPerfil(){
-        
-    }
 });
